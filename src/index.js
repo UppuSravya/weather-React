@@ -11,6 +11,7 @@ import promiseMiddleware from 'redux-promise';
 
 
 let storeWithMiddleware = applyMiddleware(promiseMiddleware)(createStore);
+
 let store = storeWithMiddleware(rootReducer);
 
 ReactDOM.render(
